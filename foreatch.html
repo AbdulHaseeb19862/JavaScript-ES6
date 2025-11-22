@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showName()">Show All Names</button>
+    <script>
+      const users = [
+        {
+          id: 1,
+          name: "Abdul Haseeb",
+          email: "haseeb@example.com",
+          age: 25,
+          country: "Pakistan",
+          isActive: true,
+        },
+        {
+          id: 2,
+          name: "Sara Khan",
+          email: "sara.khan@example.com",
+          age: 30,
+          country: "Pakistan",
+          isActive: false,
+        },
+        {
+          id: 3,
+          name: "Ali Raza",
+          email: "ali.raza@example.com",
+          age: 28,
+          country: "Pakistan",
+          isActive: true,
+        },
+        {
+          id: 4,
+          name: "Fatima Noor",
+          email: "fatima.noor@example.com",
+          age: 22,
+          country: "Pakistan",
+          isActive: true,
+        },
+        {
+          id: 5,
+          name: "Ahmed Shah",
+          email: "ahmed.shah@example.com",
+          age: 35,
+          country: "Pakistan",
+          isActive: false,
+        },
+      ];
+      let allName = [];
+      console.log(allName);
+      function showName() {
+        users.forEach((item) => {
+          allName.push(item.name);
+        });
+        console.log(allName);
+      }
+    </script>
+  </body>
+</html>
