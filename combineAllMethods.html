@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const teams = [
+        { id: 1, name: "Haseeb", points: 8, isProgrammer: true },
+        { id: 2, name: "Umer", points: 3, isProgrammer: false },
+        { id: 3, name: "Farhan", points: 6, isProgrammer: true },
+        { id: 4, name: "Saad", points: 9, isProgrammer: true },
+        { id: 5, name: "Bilal", points: 4, isProgrammer: false },
+      ];
+
+      const filteredData = teams.filter((item) => item.isProgrammer === true);
+      console.log(filteredData);
+      const points = filteredData.map((item) => item.points);
+      console.log(points);
+      const additonOfPoints = points.reduce((acc, item) => acc + item);
+      console.log(additonOfPoints);
+    </script>
+  </body>
+</html>
